@@ -19,5 +19,13 @@ class Wallet{
 }
 interface Sell{
 }
+enum Alerts{
+}
+class FailureException extends Exception{
+}
+class JamException extends Exception{
+}
+
+
 
 @enduml

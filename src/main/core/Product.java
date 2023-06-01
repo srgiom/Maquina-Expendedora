@@ -52,4 +52,10 @@ public abstract class Product {
     public void setUnits(int units) {
         this.units = units;
     }
+
+    public abstract boolean isAvailable();
+
+    public abstract void replanishStock(int elements);
+
+    public abstract void upPrice(int percentage);
 }

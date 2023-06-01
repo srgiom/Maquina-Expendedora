@@ -2,7 +2,7 @@ package main.core;
 
 public class Drinks extends Product implements Sell{
 
-    private double mililiters;
+    private final double mililiters;
 
     public Drinks(double price, String name, int id, int quantity) {
         super(price, name, id, quantity);
@@ -23,5 +23,20 @@ public class Drinks extends Product implements Sell{
     @Override
     public void upPrice(int percentage) {
 
+    }
+
+    @Override
+    public Wallet changueManagement(Wallet clientMoney, float productPrice) {
+        return null;
+    }
+
+    @Override
+    public Alerts jamMaybe() {
+        return null;
+    }
+
+    @Override
+    public Alerts failureMaybe() {
+        return null;
     }
 }
